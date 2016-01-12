@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="showproduct">
+    <div class="col-md-3"><%= image_tag(@product.image) %></div>
+
+    <div class="col-md-9">
+      <ul class="accordion-tabs">
+<!--         <li class="tab-header-and-content">
+          <a href="javascript:void(0)" class="is-active tab-link">Name</a>
+          <div class="tab-content">
+            <p><%= @product.name %></p>
+          </div>
+        </li> -->
+        <li class="tab-header-and-content">
+          <a href="javascript:void(0)" class="tab-link">Description</a>
+          <div class="tab-content">
+            <strong><%= @product.name %></strong><br>
+            <p> <%= @product.description %></p>
+          </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="javascript:void(0)" class="tab-link">Price</a>
+          <div class="tab-content">
+            <p><%= @product.price %> $</p>    
+          </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="javascript:void(0)" class="tab-link">Year</a>
+          <div class="tab-content">
+            <p><%= @product.year %></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
